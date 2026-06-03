@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand-50: #f4f6fa;
+  --color-brand-100: #e9ecf4;
+  --color-brand-200: #d6dbe9;
+  --color-brand-300: #b9c1d9;
+  --color-brand-400: #93a0c4;
+  --color-brand-500: #6f7fad;
+  --color-brand-600: #556291;
+  --color-brand-700: #444e76;
+  --color-brand-800: #363e5f;
+  --color-brand-900: #292f49;
+  --color-brand-950: #1b1e2f;
+}
+
+/* Base style resets and customizations */
+body {
+  background-color: #0d0f17;
+  color: #f3f4f6;
+  font-family: var(--font-sans);
+}
+
+/* Glassmorphism utility card styling */
+.glass {
+  background: rgba(23, 27, 44, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Customized scrollbar for list containers */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(13, 15, 23, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.5;
+  }
+}
+
+.pulsing-border {
+  animation: pulse-ring 3s infinite ease-in-out;
+}
+

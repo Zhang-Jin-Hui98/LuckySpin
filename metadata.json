@@ -1,0 +1,6 @@
+{
+  "name": "Dynamic Lucky Wheel",
+  "description": "A highly polished, physical-simulation lucky wheel customizer with smooth ease-out rotation, sound feedback, custom colors, and canvas confetti celebrations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
